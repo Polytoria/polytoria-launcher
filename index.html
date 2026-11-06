@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polytoria Launcher</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <div class="shell" data-state="checking">
+      <main class="main">
+        <div class="art"></div>
+
+        <div class="brand">
+          <div class="lockup">
+            <svg class="logo" viewBox="0 0 558 603.73" aria-hidden="true"></svg>
+            <div>
+              <img class="polytoriatext" src="/images/polytoriatext.png" alt="Polytoria" />
+              <p class="version"></p>
+            </div>
+          </div>
+
+          <div class="message">
+            <p class="title"><span class="text"></span><span class="pct"></span></p>
+            <p class="detail"></p>
+            <div class="actions">
+              <button type="button" class="link retry">Try again</button>
+              <button type="button" class="link close">Close</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="model"><canvas id="model-canvas"></canvas></div>
+        <div class="bar"><span></span></div>
+      </main>
+    </div>
+  </body>
+</html>
